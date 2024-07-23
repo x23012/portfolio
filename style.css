@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  html, body {
+    font-size: 16px;
+    font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+    color: rgba(23, 23, 23, 0.95);
+    background-color: #f8f8f8;
+  }
+  
+/* ヘッダを上に固定 */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999; /*重なりを調整*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #464646;
+  }
+  header h2 {
+    margin-top: 15px;
+    color: #f8f8f8;
+    text-align: center;
+    position: relative;
+  }
+  header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 16px;
+  }
+  header ul li a {
+    display: inline-block;
+    font-size: 1rem;
+    color: #f8f8f8;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 0.3s;
+    margin-bottom: 10px;
+  }
+  header ul li a:hover,
+  header ul li a:active {
+    color: var(--light-100);
+    background-color: var(--primary-050);
+  }
