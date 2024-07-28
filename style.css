@@ -9,7 +9,9 @@
   }
   html, body {
     font-size: 16px;
-    font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+    font-family: "Sawarabi Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
     color: rgba(23, 23, 23, 0.95);
     background-color: #f8f8f8;
   }
@@ -28,7 +30,7 @@ header {
   }
   header h2 {
     margin-top: 15px;
-    color: #f8f8f8;
+    color: #00c8ff;
     text-align: center;
     position: relative;
   }
@@ -38,19 +40,210 @@ header {
     justify-content: center;
     align-items: center;
     gap: 5px;
-    margin-top: 16px;
+    margin-top: 0px;
   }
   header ul li a {
     display: inline-block;
     font-size: 1rem;
-    color: #f8f8f8;
+    color: #00c8ff;
     padding: 10px;
     text-decoration: none;
     transition: all 0.3s;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   header ul li a:hover,
-  header ul li a:active {
-    color: var(--light-100);
+  header ul li a:active,
+  header ul li a:focus {
+    color: #00c8ff;
     background-color: var(--primary-050);
+}
+:root {
+  --header-height: 60px;
+}
+
+.explanation{
+  position: relative;
+  padding-top: 105px;
+}
+.explanation h2{
+  border-bottom: 2px solid rgb(0, 145, 255);
+  padding-left: 10px;
+}
+.explanation img{
+  margin-top: 10px;
+  width: 375px;
+  object-fit: cover;
+}
+.explanation p{
+  margin: 10px;
+  font-size: 13px;
+}
+
+@media (min-width: 600px) {
+  .explanation img{
+    width: 650px;
+    margin-left: 100px;
+    margin-top: 50px;
   }
+  .explanation p{
+    margin-top: 20px;
+    margin-left: 100px;
+    font-size: 20px;
+  }
+}
+
+.logo{
+  padding-top: 105px;
+}
+.logo h2{
+  border-bottom: 2px solid rgb(0, 145, 255);
+  padding-left: 10px;
+}
+.logo img{
+  margin-top: 10px;
+  width: 375px;
+  object-fit: cover;
+}
+.logo p{
+  margin: 15px;
+  font-size: 14px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+@media (min-width: 600px){
+  .logo img{
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 450px;
+    object-fit: cover;
+  }
+  .logo p{
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+  }
+}
+
+.poster{
+  padding-top: 105px;
+}
+.poster h2{
+  border-bottom: 2px solid rgb(0, 145, 255);
+  padding-left: 10px;
+}
+.poster .poster2{
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.poster img{
+  margin-left: 15px;
+  margin-top: 15px;
+  width: 160px;
+}
+.poster img:not(:first-child){
+  margin-top: 15px;
+}
+.poster p{
+  margin: 15px;
+  font-size: 14px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+@media (min-width: 600px){
+  .poster img{
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 350px;
+    object-fit: cover;
+  }
+  .poster p{
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+  }
+}
+
+.photo{
+  padding-top: 105px;
+}
+.photo h2{
+  border-bottom: 2px solid rgb(0, 145, 255);
+  padding-left: 10px;
+}
+.photo .ue{
+  margin-top: 10px;
+  margin-left: 35px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.photo .sita{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.photo img{
+  width: 170px;
+}
+.photo p{
+  margin: 15px;
+  font-size: 14px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+@media (min-width: 600px){
+  .photo .ue{
+    margin-top: 50px;
+    margin-left: 150px;
+  }
+  .photo .sita{
+    margin-left: 100px;
+  }
+  .photo img{
+    width: 300px;
+  }
+  .photo p{
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+  }
+}
+
+footer{
+  margin-top: 77px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: #464646;
+}
+footer h3{
+  color: #f8f8f8;
+}
+footer p{
+  margin-top: 35px;
+  font-size: 10px;
+  color: #f8f8f8;
+}
+
+@media (min-width: 600px){
+  footer {
+    margin-top: 77px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  footer h3{
+    font-size: 30px;
+  }
+  footer p{
+    margin-top: 100px;
+    font-size: 15px;
+  }
+}
